@@ -31,7 +31,7 @@ main Orders
 		max             ,i4,3       ;Maximum detail records currently supported
 	endrecord
 
-porc
+proc	;TYPO FOUND/FIXED
 
 	xcall startup
 	xcall process

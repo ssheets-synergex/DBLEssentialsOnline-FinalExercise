@@ -22,11 +22,12 @@ proc
 	&	WD_POS,a_row,a_col,
 	&	WD_ACCEPT,a_key)
 
-.ifdef DBLNET
+ if def DBLNET
 	while (%w_info(WIF_TTSTS))
-.else
+ else
 	while (%ttsts())
-.endc
+end
+
 	begin
 		data char, a1
 		xcall w_disp(a_wndid,WD_POS,a_row,a_col,WD_ACCEPT,char)
